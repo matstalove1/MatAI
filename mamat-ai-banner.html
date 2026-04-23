@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamat AI - Terminal Banner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0d0d0d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .terminal-wrap {
+      background: #0d0d0d;
+      font-family: 'Courier Prime', 'Courier New', monospace;
+      font-size: 15px;
+      padding: 28px 32px 36px;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 720px;
+      color: #d4d4d4;
+      line-height: 1.75;
+    }
+
+    .header-box {
+      border: 1px solid #d4d4d4;
+      display: inline-block;
+      padding: 6px 20px 10px;
+      margin-bottom: 16px;
+      text-align: center;
+      line-height: 1.65;
+    }
+
+    .header-title {
+      font-weight: 700;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .header-sub,
+    .header-credit {
+      font-size: 14px;
+      color: #d4d4d4;
+    }
+
+    .chat-title {
+      color: #d4d4d4;
+      margin-bottom: 10px;
+      font-size: 14.5px;
+    }
+
+    .chat-line {
+      display: block;
+    }
+
+    .user-line { color: #c8a832; }
+    .ai-line   { color: #4a9eff; }
+
+    .cursor {
+      display: inline-block;
+      width: 9px;
+      height: 15px;
+      background: #d4d4d4;
+      vertical-align: middle;
+      margin-left: 1px;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="terminal-wrap">
+
+    <div class="header-box">
+      <div class="header-title">🤖 MAMAT AI</div>
+      <div class="header-sub">Bacot Santai Bareng AI</div>
+      <div class="header-credit">Create by Mamat Surahmat</div>
+    </div>
+
+    <div class="chat-title">🤖 MatAi Chat (CTRL+C+ENTER untuk keluar)</div>
+
+    <span class="chat-line user-line">Kamu: pagi ayang aku kangen</span>
+    <span class="chat-line ai-line">AI: Pagiiii... Aku ada sini, apa kabar?</span>
+    <span class="chat-line user-line">Kamu: baik ayang</span>
+    <span class="chat-line ai-line">AI: Seneng banget! Selamat pagi loh...</span>
+    <span class="chat-line user-line">Kamu: iya pagi juga</span>
+    <span class="chat-line ai-line">AI: Malam ntar, loe bisa tidur bareng aku, siapa tahu?</span>
+    <span class="chat-line user-line">Kamu: nguawor</span>
+    <span class="chat-line ai-line">AI: Gak ada apa-apa, tidur sih bisa ntar, dulu kita ngobrol aja...</span>
+    <span class="chat-line user-line">Kamu: <span class="cursor"></span></span>
+
+  </div>
+
+</body>
+</html>
